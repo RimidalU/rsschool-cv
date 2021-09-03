@@ -3,7 +3,7 @@
 ##### _Frontend Developer_   
 
 #### Located in Minsk, Belarus
-![Phone](/img/telephone.png)+375297610293 
+![Phone](/img/telephone.png)+375297610293   
 ![Email](/img/email.png) <stankevichuuladimiru@gmail.com>   
 ![Telegram](/img/telegram.png) [@RimidalU](https://t-do.ru/@RimidalU)   
 ![YouTube](/img/youtube.png) [Uladzimir Stankevich](https://www.youtube.com/channel/UClMzyfXt4laajxG0c6ilq_A)     
@@ -12,7 +12,7 @@
 
 ### About Me:  
 
-&nbsp;&nbsp; I am a beginner web developer. Marital status: married. I love nature and travel. I already have some knowledge of web development and I am learning new technologies to use it in their projects.   
+&nbsp;&nbsp; I am a beginner web developer. I love nature and travel. I already have some knowledge of web development and I am learning new technologies to use it in their projects.   
 &nbsp;&nbsp; In the future, I want to become a full stack developer. I am looking for a front-end developer job where I will improve my skills and work on interesting projects.   
 &nbsp;&nbsp; My aim is to do what I love and become a professional at it.
 
@@ -21,6 +21,7 @@
 * Hard skills
    * HTML5
    * CSS3
+   * JS
    * Git
    * Markdown
    * Bash
@@ -42,9 +43,6 @@
    * Curiosity
    * Purposefulness
    * Emotional intellect
-   * Honesty
-   * Solution of problems
-   * Mentoring
    * Working in a state of uncertainty
    * Without bad habbits
 
