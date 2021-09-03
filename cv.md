@@ -3,12 +3,12 @@
 ##### _Frontend Developer_   
 
 #### Located in Minsk, Belarus
-Phone +375297610293  
-Email <stankevichuuladimiru@gmail.com>   
-Telegram [@RimidalU](https://t-do.ru/@RimidalU)   
-YouTube [Uladzimir Stankevich](https://www.youtube.com/channel/UClMzyfXt4laajxG0c6ilq_A)     
-Linkedin [https://www.linkedin.com/in/uladzimir-stankevich/](https://www.linkedin.com/in/uladzimir-stankevich/)   
-GitHub [RimidalU](https://github.com/RimidalU)
+![Phone](/img/telephone.png)+375297610293 
+![Email](/img/email.png) <stankevichuuladimiru@gmail.com>   
+![Telegram](/img/telegram.png) [@RimidalU](https://t-do.ru/@RimidalU)   
+![YouTube](/img/youtube.png) [Uladzimir Stankevich](https://www.youtube.com/channel/UClMzyfXt4laajxG0c6ilq_A)     
+![Linkedin](/img/linkedin.png) [https://www.linkedin.com/in/uladzimir-stankevich/](https://www.linkedin.com/in/uladzimir-stankevich/)   
+![GitHub](/img/github.png) [RimidalU](https://github.com/RimidalU)
 
 ### About Me:  
 
@@ -85,5 +85,5 @@ Lottery Ticket KATA from CODEWARS:
 
 ### Languages
 
-Russian - Native 
-English - A1, and continue to study it.
+* Russian - Native 
+* English - A1, and continue to study it.
