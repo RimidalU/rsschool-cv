@@ -1,1 +1,1 @@
-# rsschool-cv
+https://RimidalU.github.io/rsschool-cv/cv
