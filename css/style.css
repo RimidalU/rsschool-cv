@@ -358,14 +358,27 @@ margin-bottom: 10px;
 @media screen and (max-width: 800px){
 
 .burger-menu{
-    display: block;
+  display: block;
 }
 
 .header__nav{
   display: none;
 }
 
-.burger-menu__button {
+.header__btn{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 30;
+  max-width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--dark-color);
+  transition: 0.4s;
+}
+
+
+.bm__button {
   position: fixed;
   top: 10px;
   right: 10px;
@@ -377,50 +390,50 @@ margin-bottom: 10px;
   transition: 0.4s;
 }
 
-.burger-menu__button:hover .burger-menu__lines {
+.bm__button:hover .bm__lines {
   filter: brightness(0.7);
 }
 
-.burger-menu__lines,
-.burger-menu__lines::after,
-.burger-menu__lines::before {
+.bm__lines,
+.bm__lines::after,
+.bm__lines::before {
   position: absolute;
   width: 40px;
   height: 6px;
   background-color: var(--opp-color);
 }
 
-.burger-menu__lines {
+.bm__lines {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.burger-menu__lines::before {
+.bm__lines::before {
   content: "";
   top: -12px;
 }
 
-.burger-menu__lines::after {
+.bm__lines::after {
   content: "";
   top: 12px;
 }
-.burger-menu_active .burger-menu__button,
-.burger-menu_active .burger-menu__lines {
+.bm_active .bm__button,
+.bm_active .bm__lines {
   background-color: transparent;
 }
 
-.burger-menu_active .burger-menu__lines::before {
+.bm_active .bm__lines::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.burger-menu_active .burger-menu__lines::after {
+.bm_active .bm__lines::after {
   top: 0;
   transform: rotate(-45deg);
 }
 
-.burger-menu__nav {
+.bm__nav {
   padding-top: 80px;
   position: fixed;
   z-index: 20;
@@ -433,11 +446,11 @@ margin-bottom: 10px;
   transition: 0.8s;
 }
 
-.burger-menu_active .burger-menu__nav {
+.bm_active .bm__nav {
   right: 0;
 }
 
-.burger-menu__link {
+.bm__link {
   padding: 30px;
   font-family: sans-serif;
   font-size: 32px;
@@ -448,11 +461,11 @@ margin-bottom: 10px;
   color:  var(--opp-color);
 }
 
-.burger-menu__link :hover {
+.bm__link :hover {
   filter: brightness(0.7);
 }
 
-.burger-menu__overlay {
+.bm__overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -461,7 +474,7 @@ margin-bottom: 10px;
   height: 100vh;
   z-index: 10;
 }
-.burger-menu_active .burger-menu__overlay {
+.bm_active .bm__overlay {
   display: block;
 }
 }
