@@ -1,58 +1,60 @@
+console.log(`Score: 150 / 150
+вёрстка валидная +10
+вёрстка семантическая +20
+для оформления СV используются css-стили +10
+контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10
+вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10
+есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. +10
+на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) +10
+контакты для связи и перечень навыков оформлены в виде списка ul > li +10
+CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10
+CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода. Для подсветки кода может использоваться js-библиотека, например, highlight.js +10
+CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10
+CV выполнено на английском языке +10
+выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10
+есть видеорезюме автора CV на английском языке. +10 - Не успел((
+дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10`);
 
-// function burgerMenu() {
-//     let menu = document.querySelector(".bm__wpap");
-//     let button = menu.querySelector(".bm__button");
-//     let links = menu.querySelectorAll(".bm-set__link");
-//     let overlay = menu.querySelector(".bm__overlay");
 
 
-//     button.addEventListener("click", (e) => {
-//         e.preventDefault();
-//         toggleMenu();
-//     });
-//     [].forEach.call(links, function (el) {
-//         el.addEventListener("click", () => toggleMenu());
-//     });
-//     overlay.addEventListener("click", () => toggleMenu());
-
-
-//     function toggleMenu() {
-//         menu.classList.toggle("bm_active");
-//         if (menu.classList.contains("bm_active")) {
-//             document.body.style.overflow = "hidden";
-//         } else {
-//             document.body.style.overflow = "visible";
-//         }
-//     }
-// }
-// burgerMenu();
 
 function burgerMenu() {
+
+    
+
+
+    let button = menu.querySelector(".bm__button");
     let menu = document.querySelector(".burger-menu");
-    let button = menu.querySelector(".burger-menu__button");
-    let links = menu.querySelectorAll(".burger-menu__link");
-    let overlay = menu.querySelector(".burger-menu__overlay");
+    let overlay = menu.querySelector(".bm__overlay");
+    let links = menu.querySelectorAll(".bm__link");
+
+
+  
 
 
     button.addEventListener("click", (e) => {
         e.preventDefault();
         toggleMenu();
     });
+
+
     [].forEach.call(links, function (el) {
         el.addEventListener("click", () => toggleMenu());
     });
+
     overlay.addEventListener("click", () => toggleMenu());
 
 
     function toggleMenu() {
-        menu.classList.toggle("burger-menu_active");
-        if (menu.classList.contains("burger-menu_active")) {
+
+        menu.classList.toggle("bm_active");
+        if (menu.classList.contains("bm_active")) {
             document.body.style.overflow = "hidden";
         } else {
             document.body.style.overflow = "visible";
         }
     }
 }
+
 burgerMenu();
 
-console.log('test');
