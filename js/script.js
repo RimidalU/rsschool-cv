@@ -1,3 +1,32 @@
+
+function burgerMenu() {
+    let menu = document.querySelector(".burger-menu");
+    let button = menu.querySelector(".bm__button");
+    let links = menu.querySelector(".bm__link");
+    let overlay = menu.querySelector(".bm__overlay");
+
+
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleMenu();
+    });
+    [].forEach.call(links, function (el) {
+        el.addEventListener("click", () => toggleMenu());
+    });
+    overlay.addEventListener("click", () => toggleMenu());
+
+
+    function toggleMenu() {
+        menu.classList.toggle("bm_active");
+        if (menu.classList.contains("bm_active")) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "visible";
+        }
+    }
+}
+burgerMenu();
+
 console.log(`Score: 150 / 150
 вёрстка валидная +10
 вёрстка семантическая +20
@@ -14,47 +43,4 @@ CV выполнено на английском языке +10
 выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10
 есть видеорезюме автора CV на английском языке. +10 - Не успел((
 дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10`);
-
-
-
-
-function burgerMenu() {
-
-    
-
-
-    let button = menu.querySelector(".bm__button");
-    let menu = document.querySelector(".burger-menu");
-    let overlay = menu.querySelector(".bm__overlay");
-    let links = menu.querySelectorAll(".bm__link");
-
-
-  
-
-
-    button.addEventListener("click", (e) => {
-        e.preventDefault();
-        toggleMenu();
-    });
-
-
-    [].forEach.call(links, function (el) {
-        el.addEventListener("click", () => toggleMenu());
-    });
-
-    overlay.addEventListener("click", () => toggleMenu());
-
-
-    function toggleMenu() {
-
-        menu.classList.toggle("bm_active");
-        if (menu.classList.contains("bm_active")) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "visible";
-        }
-    }
-}
-
-burgerMenu();
 
