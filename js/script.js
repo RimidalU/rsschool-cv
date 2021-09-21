@@ -2,7 +2,7 @@
 function burgerMenu() {
     let menu = document.querySelector(".burger-menu");
     let button = menu.querySelector(".bm__button");
-    let links = menu.querySelector(".bm__link");
+    let links = menu.querySelectorAll(".bm__link");
     let overlay = menu.querySelector(".bm__overlay");
 
 
